@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="services">
+      <div class="container">
+            <div class="col-md-10 col-md-offset-1 section-title text-center">
+            </div>
+            <div class="row">
+                  <div class="col-xs-12 col-sm-4 service"> <img src="{{project.image.url}}" class="img-responsive" alt="Project Title">
+                      <a href="{{ project.get_absolute_url }}"><h3>{{ project.title }}</h3></a>
+                      <p>{{ project.description }}</p>
+                      {% if services.url %}
+                            <a href="{{ project.url }}">Check Website</a>
+                      {% endif %}
+
+                  </div>
+            </div>
+      </div>
+</div>
+{% endblock %}

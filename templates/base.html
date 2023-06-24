@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html dir="rtl" lang="fa">
+<head>
+    {% include 'head.html' %} <!-- Including the head.html file -->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    {% include 'nav.html' %} <!-- Including the nav.html file -->
+
+
+
+    {% block content %} <!-- Start of a content block -->
+
+    <!-- Content goes here -->
+
+    {% endblock %} <!-- End of the content block -->
+
+
+    {% include 'footer.html' %} <!-- Including the footer.html file -->
+
+    {% include 'scripts.html' %} <!-- Including the scripts.html file -->
+</body>
+</html>

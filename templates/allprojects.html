@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div id="services">
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1 section-title text-center">
+                <h2>پروژه‌های ما</h2>
+                <hr>
+                <p>از تنوع پروژه‌های نوآورانه‌ای که تخصص و خلاقیت ما را به نمایش می‌گذارند، پیمودن کنید.</p>
+            </div>
+                <div class="row">
+                {% for project in projects %}
+                    <div class="col-xs-12 col-sm-4 service"> <img src="{{project.image.url}}" class="img-responsive" alt="Project Title">
+                        <a href="{{ project.get_absolute_url }}"><h3>{{ project.title }}</h3></a>
+                        <p>{{ project.description }}</p>
+                        {% if services.url %}
+                           <a href="{{ project.url }}">Check Website</a>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
