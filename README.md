@@ -138,7 +138,7 @@ The specific license terms for the base template used in this project can be
  found on the [free-css.com](https://www.free-css.com/) website. Make sure to review and comply with the licensing requirements when using the template.
 
 For the Django code and modifications made for this project, you can choose an appropriate open-source license or customize it as per your preferences.
-
+ 
 ## Credits
 
 - [free-css.com](https://www.free-css.com/) for providing the base template used in this project.
